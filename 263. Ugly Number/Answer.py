@@ -11,7 +11,7 @@ class Solution(object):
 
         """
 
-        if num < 0: return False
+        if num <= 0: return False
 
         for i in [2,3,5]:
 
