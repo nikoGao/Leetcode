@@ -1,0 +1,18 @@
+There is no boolean operator counterpart to bitwise exclusive-or, but there is a simple explanation. The exclusive-or operation takes two inputs and returns a 1 if either one or the other of the inputs is a 1, but not if both are. That is, if both inputs are 1 or both inputs are 0, it returns 0. Bitwise exclusive-or, with the operator of a caret, ^, performs the exclusive-or operation on each pair of bits. Exclusive-or is commonly abbreviated XOR.
+Set union A | B
+Set intersection A & B
+Set subtraction A & ~B
+Set negation ALL_BITS ^ A or ~A
+Set bit A |= 1 << bit
+Clear bit A &= ~(1 << bit)
+Test bit (A & 1 << bit) != 0
+Extract last bit A&-A or A&~(A-1) or x^(x&(x-1))
+Remove last bit A&(A-1)
+Get all 1-bits ~0
+
+
+常用技巧：
+（1）n & （n-1）能够消灭n中最右侧的一个1。
+（2） 右移：除以2， 左移：乘以2。
+（3）异或性质：交换律，0^a=a, a^a=0;
+（3）将常用字符、数字等均转为按位运算，可以节约空间。
