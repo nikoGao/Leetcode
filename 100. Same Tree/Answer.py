@@ -1,3 +1,4 @@
+# Run time 35ms(96.56%)
 #解题思路：
 #1.递归问题，遍历
 #2.首先特殊情况：两者均为空
@@ -18,7 +19,7 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        if p==None and q==None:
+        if not p and not q:
             return True
         if p and q and p.val == q.val:
             return self.isSameTree(p.left, q.left) and self.isSameTree(p.right,q.right)
