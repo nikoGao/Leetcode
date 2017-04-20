@@ -1,0 +1,2 @@
+In the discuss, there is a method Boyer-Moore Majority Vote Algorithm
+This method should be learn
