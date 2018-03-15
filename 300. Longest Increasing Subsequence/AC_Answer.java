@@ -1,3 +1,6 @@
+/*(1) if x is larger than all tails, append it, increase the size by 1
+(2) if tails[i-1] < x <= tails[i], update tails[i]
+*/
 class Solution {
     public int lengthOfLIS(int[] nums) {
         int[] tails = new int[nums.length];
