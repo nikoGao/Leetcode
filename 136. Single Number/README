@@ -1,0 +1,4 @@
+There are three solutions to solve this problem:
+1. the slowest one: use hash map, store each number and their appearance time
+2. sort and compare the elements with their previous one
+3. use bit manipulation as all element xor itself equal to zero
