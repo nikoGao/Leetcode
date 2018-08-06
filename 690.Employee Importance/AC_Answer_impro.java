@@ -1,3 +1,4 @@
+// DFS is faster than BFS, so this one is a slower one
 /*
 // Employee info
 class Employee {
